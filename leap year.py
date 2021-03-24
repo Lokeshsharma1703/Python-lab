@@ -1,11 +1,6 @@
-y=int(input('Enter year : '))
-if y%4==0 and y%100!=0:
+# Program to check entered year is leap year or not.
+y=int(input('Enter a year : '))
+if y%4==0 and y%100!=0 or y%400==0:
     print('Leap year')
-elif y%100==0:
-    if y%400==0:
-        print('Leap year')
-    else:
-        print('Not leap year')
 else:
     print('Not leap year')
-        
